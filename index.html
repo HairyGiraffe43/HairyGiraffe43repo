@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    
+
+    <div class="lac">
+
+        <div class="barholder">
+            <div class="bar" id="backgroundbar"></div>
+            <div class="bar" id="bar1"></div>
+            <p class="leveltext" id="lt1">Level 1</p>
+        </div>
+
+        <div class="container">
+            <h1>Oatbran Simulator</h1>
+            <p id="counter">0</p>
+            <div class="buttonholders" id="mainbuttonholder">
+                <button id="incrementButton">click</button>
+                <button id="prestigetab">W</button>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <div class="upgradepanelbig" id="pugp">
+        <div class="upgradeheader" id="pointpanel">
+            <h3>Point Upgrades</h3>
+            <div class="resourcedisplaybar" id="points">
+                <p class="resourcedisplaytext" id="pointdisplaytext">0</p>
+
+            </div>
+        </div>
+
+        <div class="scrollable-panel" id="pointupgrades">
+            <div class="upgradePanel" id="upg1">
+                <h2>More Points</h2>
+
+                <p class="upgradeTextDesc" id="upgt1">Increase the points per click by 1.</p>
+
+                <button class="upgradeButton" id="upgradebutton1">Cost to upgrade: 10</button>
+
+            </div>
+
+            <div class="upgradePanel" id="upg2">
+                <h2>Higher Crit Chance</h2>
+
+                <p class="upgradeTextDesc" id="upgt2">Increase the chance of a critical click by 0.5%. 0/100</p>
+
+                <button class="upgradeButton" id="upgradebutton2">Cost to upgrade: 50</button>
+
+            </div>
+
+            <div class="upgradePanel" id="upg3">
+                <h2>More Crit Value</h2>
+
+                <p class="upgradeTextDesc" id="upgt3">Increase the the value of a critical click by + x0.1%. currently: x3</p>
+
+                <button class="upgradeButton" id="upgradebutton3">Cost to upgrade: 100</button>
+
+            </div>
+
+        </div>
+    </div>
+
+   
+
+    <div class="upgradepanelbig"id="asher">
+        <div class="upgradeheader"id="ashpanel">
+            <h3>A Coin Upgrades</h3>
+            <div class="resourcedisplaybar"id="acoins">
+                <p class="resourcedisplaytext"id="acoindisplaytext">0</p>
+
+            </div>
+        </div>
+
+        <div class="scrollable-panel" id="ashercoinupgrades">
+            <div class="upgradePanel" id="upgpa1">
+                <h2>Level Up Faster</h2>
+
+                <p class="upgradeTextDesc" id="upga1">Level up 5% faster (0/20)</p>
+
+                <button class="upgradeButton2" id="aupgradebutton1">Cost to upgrade: 45</button>
+
+            </div>
+
+            <div class="upgradePanel" id="upgpa2">
+                <h2>More Coins</h2>
+
+                <p class="upgradeTextDesc" id="upga2">+1% chance to get a A Coin from each click. (0/50)</p>
+
+                <button class="upgradeButton2" id="aupgradebutton2">Cost to upgrade: 100</button>
+
+            </div>
+
+            <div class="upgradePanel" id="upgpa3">
+                <h2>Modern Agriculture</h2>
+
+                <p class="upgradeTextDesc" id="upga3">Earn 5% more Wheat. (0/40)</p>
+
+                <button class="upgradeButton2" id="aupgradebutton3">Cost to upgrade: 200</button>
+
+            </div>
+
+            <div class="upgradePanel" id="upgpa4">
+                <h2>Perfect Harvest</h2>
+
+                <p class="upgradeTextDesc" id="upga4">Earn +1% boost from wheat. (0/99)</p>
+
+                <button class="upgradeButton2" id="aupgradebutton4">Cost to upgrade: 300</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pmenumanager"id="mainpmenu">
+        <h1>Prestige + Crafting</h1>
+        <div class="tabmanager">
+
+            <button class="ptab" id="gstab">W</button>
+            <button class="ptab" id="ctab">C</button>
+
+        </div>
+
+        <div class="menumanager">
+            <div class="menutab" id="menutabgs">
+                <div class="scrollupanelheader">
+                    <h4>Prestige</h4>
+                    <p class="upgradeTextDesc"id="prestigeTextAMT">Prestige resets all upgrades except A coin upgrades but you gain wheat (min. 100). Wheat gives 1% bonus points per click each and can be spent on upgrades. You will earn 0 if you prestige now.</p>
+                    <div class="pbad">
+                        <button class="prestigeButton" id="pupgb">Prestige!</button>
+                        <div class="resourcedisplaybar"id="gsbarx">
+                            <p class="resourcedisplaytext" id="gsdisplay">0</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="scollupanel" id="prestigescroller">
+                    <div class="upgradePanella" id="upgp1">
+                        <h2>Mill</h2>
+
+                        <p class="upgradeTextDesc" id="upgap1">Crush wheat each click to convert it to A coins (1 wheat -> 2 A coins). Upgrade to increase max crush rate (max rate: 0)</p>
+                        <input type="text" id="millburnrate" placeholder="Rate of Consumption...">
+
+                        <button class="upgradeButton3" id="pupgradebutton1">Cost to upgrade: 100</button>
+
+                    </div>
+                    <div class="upgradePanella" id="upgp2">
+                        <h2>Mill</h2>
+
+                        <p class="upgradeTextDesc" id="upgap2">Crush wheat each click to convert it to A coins (1 wheat -> 2 A coins). Upgrade to increase max crush rate (max rate: 0)</p>
+                        <input type="text" id="cccc" placeholder="Rate of Consumption...">
+
+                        <button class="upgradeButton3" id="pupgradebutton2">Cost to upgrade: 100</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="menutab" id="menutabc">
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

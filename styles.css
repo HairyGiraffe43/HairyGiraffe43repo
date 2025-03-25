@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    gap: 30px;
+}
+.lac{
+    
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+   
+}
+
+.buttonholders {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.menumanager{
+    width: 300px;
+
+    height: 450px;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+
+}
+.menutab{
+    position: absolute;
+   display:flex;
+   gap: 5px;
+   flex-direction: column;
+    background-color: darkgrey;
+    padding: 10px;
+    width: 300px;
+    height: 450px;
+   
+}
+.pbad{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.scollupanel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+    height: 300px;
+    overflow-y: scroll; /* Allows vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+
+.pmenumanager {
+    padding: 10px;
+    display: flex;
+
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+.tabmanager{
+    display: flex;
+    gap: 0px;
+    width: 300px;
+    height: 100px;
+
+
+}
+.ptab {
+    height: 100px;
+    width: 200px;
+    background-color: darkslategrey;
+    transition: background-color 0.3s ease;
+}
+.ptab:hover{
+    background-color: darkseagreen;
+}
+.tabtext{
+    color:white;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.scrollupanelheader {
+    display: block;
+    gap: 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:280px;
+    height: 150px;
+}
+.upgradePanel {
+    display: block;
+    gap: 5px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 120px;
+   
+}
+.upgradePanella {
+    display: block;
+    gap: 5px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    height: 160px;
+}
+
+.resourcedisplaybar {
+    width: 140px;
+    height: 40px;
+    background-color: darkslategrey;
+    font-size: 20px;
+    
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    
+}
+
+
+.barholder {
+
+    text-align: center;
+    position: relative;
+    display: unset;
+    background-color: black;
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 40px;
+}
+
+.bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 0;
+    height: 20px;
+    background-color: dodgerblue;
+}
+#backgroundbar{
+    width: 160px;
+    background-color: darkslategray 
+}
+
+#prestigetab{
+    
+    width: 20px;
+    height: 40px;
+    text-align: center;
+    background-color: yellow;
+    display: none;
+}
+
+
+#lt1 {
+    position: absolute;
+    top: 11px;
+    left: 65px;
+    color: white;
+  
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+h2 { 
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#counter {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.upgradeTextDesc {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+
+}
+.resourcedisplaytext {
+    font-size: 20px;
+    
+    color: white;
+    
+}
+
+.upgradeheader{
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*background-image: url('image.jpg');*/
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+
+    .scrollable-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px; 
+    height: 600px; 
+    overflow-y: scroll; /* Allows vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  
+}
+
+   
+    .scrollable-panel::-webkit-scrollbar {
+        width: 0px; 
+        height: 0px; 
+    }
+
+/* Hide scrollbar in Firefox */
+.scrollable-panel {
+    scrollbar-width: none; 
+
+}
+
+.panel {
+    height: 60px; 
+    margin-bottom: 10px;  
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.upgradeButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   /* margin-top: 10px; */
+}
+    .upgradeButton:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+.upgradeButton2 {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-top: 10px; */
+}
+
+    .upgradeButton2:hover {
+        background-color: indianred; /* Darker blue on hover */
+    }
+.upgradeButton3 {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-top: 10px; */
+}
+
+    .upgradeButton3:hover {
+        background-color: beige; /* Darker blue on hover */
+    }
+
